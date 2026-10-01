@@ -4,7 +4,7 @@ variable "environment" {
   default     = "dev"
 }
 
-variable "bucket_name" {
+variable "storage_bucket_name" {
   description = "Logical name for the CloudNotes storage bucket (simulated locally)."
   type        = string
   default     = "cloudnotes-artifacts"
