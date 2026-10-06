@@ -30,7 +30,7 @@ resource "local_file" "release_manifest" {
   filename = "${path.module}/.generated/${var.environment}-release-manifest.json"
   content = jsonencode({
     # This should reference var.bucket_name (declared in variables.tf).
-    bucket      = var.bucket_name_old
+    bucket      = var.bucket_name
     environment = var.environment
   })
 }
