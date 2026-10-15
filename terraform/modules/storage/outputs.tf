@@ -5,5 +5,4 @@ output "bucket_id" {
 
 output "bucket_path" {
   description = "Path to the generated bucket metadata file."
-  value       = local_file.bucket_metadata.filename
-}
+  value       = module.storage.bucket_path
