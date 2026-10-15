@@ -17,7 +17,7 @@ provider "local" {}
 # provides. The intended design is to call module "storage" here instead
 # of hand-defining the bucket metadata file again.
 module = "storage" {{
-  path = terraform.modules.storage
+  path = "./modules/storage"
     bucket_name = var.bucket_name
     environment = var.environment
     labels      = var.labels
