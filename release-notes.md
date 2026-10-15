@@ -7,21 +7,22 @@ Fill in this template as you diagnose and fix each of the three planted faults.
 **Original error (paste `terraform validate` output):**
 
 ```
-<paste here>
+Refrence to undeclared input variable
+33: bucket = var.bucket_name_old
 ```
 
 **Root cause:**
 
-<explain>
+the bucket name was wrong
 
 **Fix applied:**
 
-<describe the change>
+changed the name to just bucket_path
 
 **Evidence (clean validate output):**
 
 ```
-<paste here>
+Success! The configuration is valid.
 ```
 
 ---
@@ -30,7 +31,7 @@ Fill in this template as you diagnose and fix each of the three planted faults.
 
 **Original problem:**
 
-<describe what was duplicated / misconfigured>
+Storage module was duplicated
 
 **Fix applied:**
 
@@ -49,7 +50,7 @@ Fill in this template as you diagnose and fix each of the three planted faults.
 **Original error (paste `docker build` output):**
 
 ```
-<paste here>
+was refrencing build instead of deps
 ```
 
 **Root cause:**
@@ -58,7 +59,7 @@ Fill in this template as you diagnose and fix each of the three planted faults.
 
 **Fix applied:**
 
-<describe the Dockerfile / compose changes>
+refrence deps
 
 **Evidence (`curl http://localhost:8080/health`):**
 
